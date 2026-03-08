@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	
+	<!--js-gtrans-->
+	
+	<!--js-ga4-->
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Civic website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
+	<meta name="author" content="Abhinav Kumar">
+	<meta name="robots" content="index, follow">
+	<meta name="theme-color" content="#000000">
+	<meta property="og:type" content="website">
+	<!--og:image-<300kb-&-1200x630-&-.webp-.jpg-->
+	<meta property="og:image" content="https://harriscountyjudge2026.com/photo_home.webp">
+	<!--og:image:width / og:image:height-->
+	<meta property="og:title" content="Harris County Judge | 2026 Primary Runoff Election Campaigns & News">
+	<meta property="og:url" content="https://harriscountyjudge2026.com">
+	<meta property="og:description" content="Civic website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
+	<meta property="og:locale" content="en_US">
+	
+	<link rel="canonical" href="https://harriscountyjudge2026.com">
+	
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" as="style" fetchpriority="high">
+	<link rel="preload" href="photo_home.webp" as="image" fetchpriority="high">
+	
+	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+	<!--apple-touch-icon-180x180-->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" fetchpriority="high">
+	<!--<link rel="stylesheet" href="***.css" fetchpriority="high">-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css" fetchpriority="low">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" fetchpriority="low">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" fetchpriority="low">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap">
+	
+	<title>Harris County Judge | 2026 Primary Runoff Election Campaigns & News</title>
+
+	<style>
+		
+		html {
+			scroll-behavior: smooth !important;
+		}
+		
+		.font-montserrat {
+			font-family: 'Montserrat' !important;
+		}
+		
+		#nav {
+			background-color: rgba(0,0,0,0.75) !important;
+		    position: fixed !important;
+			width: 100% !important;
+		}
+		.navbar-link, .navbar-item {
+			color: white !important;
+		}
+		
+		#main {
+			background-image: url('photo_home.webp'), url('photo_home.jpg') !important;
+			background-size: cover !important;
+			background-position: center !important;
+		}
+		#main .container {
+			background-color: rgba(0,0,0,0.85) !important;
+			border-radius: 1em !important;
+		}
+		#main .button {
+			color: white !important;
+			font-weight: 800 !important;
+			text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.25) !important;
+			border-width: 0 !important;
+			transition: background-color 0.5s ease, transform 0.25s ease !important;
+			background-color: rgba(6,199,9,1) !important; /* muted green */
+		}
+		#main .button:hover {
+			background-color: rgba(0,255,0,1) !important; /* bright green */
+			transform: scale(1.125) !important;
+		}
+		
+		</style>
+
+</head>
+
+<body class="font-montserrat">
+	
+	<header id="nav" class="navbar">
+		
+		<div class="container">
+		
+			<div class="navbar-brand">
+				
+				<p id="countdown" class="navbar-item"></p>
+				
+				<span class="navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				
+			</div>
+			
+			<div class="navbar-menu">
+				
+				<div class="navbar-end">
+					
+					<div class="navbar-item has-dropdown is-hoverable">
+						
+						<a class="navbar-link">
+							<i class="fa-solid fa-democrat"></i>
+							Democrats
+						</a>
+						
+						<div class="navbar-dropdown is-boxed">
+							
+							<p class="navbar-item" href="#annise-parker">
+								Annise Parker
+							</p>
+							
+							<p class="navbar-item" href="#letitia-plummer">
+								Letitia Plummer
+							</p>
+							
+						</div>
+						
+					</div>
+					
+					<div class="navbar-item has-dropdown is-hoverable">
+						
+						<a class="navbar-link">
+							<i class="fa-solid fa-republican"></i>
+							Republicans
+						</a>
+						
+						<div class="navbar-dropdown is-boxed">
+							
+							<p class="navbar-item" href="#warren-howell">
+								Warren Howell
+							</p>
+							
+							<p class="navbar-item" href="#orlando-sanchez">
+								Orlando Sanchez
+							</p>
+							
+						</div>
+						
+					</div>
+					
+					<a class="navbar-item" href="#media">
+						<i class="fa-solid fa-bullhorn"></i>
+						Media
+					</a>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</header>
+	
+	<section>	
+		
+		<section id="main" class="hero is-fullheight">
+			
+			<div class="hero-body">
+				
+				<div class="mx-2 my-2 px-5 py-5 container has-text-centered">
+					
+					<h1 class="mb-2 title">
+						Harris County Judge
+					</h1>
+					
+					<h2 class="mb-2 subtitle has-text-white">
+						Primary Runoff Elections <i class="fa-solid fa-bolt-lightning"></i> May 26, 2026
+					</h2>
+					
+					<div class="buttons is-centered">
+						
+						<a class="button is-rounded is-medium" target="_blank" href="https://www.hctax.net/Voter/Registration">
+							<i class="fa-solid fa-check-to-slot"></i>
+							&nbsp;Signup to Vote
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<p class="mx-6 mb-2 attribution has-text-centered has-text-white is-size-7">"<a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/47563830@N06/21515449816">City of Houston</a>" by <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/47563830@N06">Jason@Dynamicmoment</a> is licensed under <a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse">CC BY-NC-ND 2.0 <img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
+			
+		</section>
+		
+		<section id="media" class="section has-text-light" data-theme="dark">
+			
+			<h2 class="title">
+				Media Coverage
+			</h2>
+			
+			<div class="timeline">
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-newspaper"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 8, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.houstonchronicle.com/projects/2026/texas-primary-election-live-results/harris-county/">Harris County Primary Live Election Results</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Atop the local ticket was the race to succeed County Judge Lina Hidalgo. Both the top Democratic and Republican contenders in that race are now headed for a May runoff. The winners of the runoff will face off in the November election... Annise Parker and Letitia Plummer have advanced to a runoff. Orlando Sanchez and Warren A. Howell have advanced to a runoff."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Chronicle</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.youtube.com/watch?v=iQnkG2P9Cec">Texas Primary Election Results Breakdown: Surprises, Runoffs & Upsets</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The Harris County Judge races are both headed for a runoff. Former Houston Mayor Annise Parker fell just shy of 50% of the vote against former Houston City Council Member Letitia Plummer in the Democratic primary while former County Treasurer Orlando Sanchez was below the 50% mark and will face Warren Howell in a runoff."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Public Media (NPR) | Houston Matters with Craig Cohen</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.houstonpress.com/news/harris-county-judge-nominees-will-be-decided-in-runoffs/">Harris County Judge Nominees Will Be Decided in Runoffs</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Annise Parker and Letitia Plummer will face off for the Democratic Party nod, and Orlando Sanchez and Warren Howell are vying for the GOP. Former Houston Mayor Annise Parker secured the most votes in the Democratic primary for Harris County judge but fell slightly short of the 50 percent-plus requirement, sending her to a runoff with former Houston City Council member Letitia Plummer. A similar scenario played out on the GOP side as former Harris County Treasurer Orlando Sanchez and insurance businessman Warren Howell will face off again in May. The Republican primary proved to be an upset for Marty Lancton, the Houston Professional Fire Fighters Association president who was endorsed by Gov. Greg Abbott and considered in early polls to be a frontrunner. Lancton came in third. "</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Press</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.fox26houston.com/news/texas-2026-primary-election-winners-harris-county-judge-results">Harris County judge Democratic, Republican primaries head to runoff</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The Harris County judge primaries will head to a runoff. Annise Parker and Letitia Plummer received the most votes in the Democratic primary. Orlando Sanchez and Warren Howell received the most votes in the Republican primary, with Marty Lancton in a close third."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— FOX 26 Houston</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-newspaper"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://communityimpact.com/houston/cypress/election/2026/03/03/update-see-unofficial-results-from-harris-county-judge-precinct-2-march-primary-elections/">UPDATE: See unofficial results from Harris County judge, Precinct 2 March primary elections</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"With all 275 Harris County voting precincts reporting, two Democrats and two Republicans are headed to the May runoff elections for county judge, as none of the candidates received at least 50% of the vote... Former Houston Mayor Annise Parker will face former Houston City Council member Letitia Plummer in the May 26 Democratic primary runoff... Former Houston City Council member Orlando Sanchez and business owner Warren A. Howell will advance to the [Republican primary] runoff."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Community Impact</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://thetexan.news/elections/2026/harris-county-judge-primaries-end-in-republican-and-democratic-runoffs/article_80c5f602-8e1f-4635-bf68-cc1a0940e915.html">Harris County Judge Primaries End in Republican and Democratic Runoffs</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"In the crowded primary races to replace Harris County Judge Lina Hidalgo, neither party has a nominee yet, since no candidate captured at least 50 percent of the vote on Tuesday night."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— The Texan</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 4, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://camposcommunications.com/2026/03/results/">Results</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"I thought former H-Town Mayor Annise Parker would win without a runoff in her race for Harris County Judge. Nope. She is in a runoff. MAGA said no thanks to Houston Firefighters union honcho Marty Lancton for Harris County Judge. Marty didn’t even make the runoff."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Campos Communications (Commentary)</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/03/03/544861/harris-county-judge-election-results-democratic-primary-parker-plummer-salazar/">Annise Parker and Letitia Plummer headed to runoff in Democratic primary for Harris County judge</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Former Houston Mayor Annise Parker and former city council member Letitia Plummer are heading to a runoff to claim the Democratic nomination for the Harris County judge’s seat after neither candidate received more than 50% of the vote during Tuesday’s primary election... Parker received 46.6% of the vote, compared to Plummer’s 37.3%... In the six-candidate Republican primary, former Harris County treasurer Orlando Sanchez and local businessman Warren Howell appeared headed to a runoff after receiving 26.5% and 20.8% of the vote, respectively... The two primary runoff winners will compete in the November general election for the right to be the chief executive of the third-largest county in the United States."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Public Media (NPR)</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/03/03/544888/harris-county-judge-republican-primary-election-results/">Orlando Sanchez and Warren Howell make GOP primary runoff in Harris County judge race, unofficial results show</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Republicans are seeking to win back the Harris County judge seat, which has been held by a Democrat since the 2018 election. Orlando Sanchez and Warren Howell appeared headed to a runoff in the Republican primary for Harris County judge, according to complete but unofficial results released Wednesday morning by the Harris County Clerk’s Office... Sanchez served as an at-large member of the non-partisan Houston City Council from 1996 through 2000 before filling the Harris County Treasurer's role as a Republican in 2007. After more than a decade in office, he was swept out of county government in the 2018 blue wave along with former Harris County Judge Ed Emmett. Sanchez subsequently fell short in two bids for the City Controller's office in 2019 and 2023. Howell is an Air Force veteran and civic association leader in the Spring Branch area who works in the insurance business, according to his campaign website."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Public Media (NPR)</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.axios.com/local/houston/2026/03/04/harris-county-judge-election-results-primaries-dem-gop">No clear winners in Harris County judge primaries</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The top two finishers in the Democratic and Republican primary for Harris County judge are headed for May runoffs after no candidate passed the 50% threshold... On the Democratic side, former Houston mayor Annise Parker will face off against former at-large Houston City Council Member Letitia Plummer. On the Republican side, former Harris County treasurer Orlando Sanchez and business owner Warren Howell advanced to a runoff."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— AXIOS Houston</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.msn.com/en-us/news/other/harris-county-judge-election-results-2026-annise-parker-leads-dem-primary/ar-AA1XtDM8">Harris County judge election results 2026: Annise Parker leads Dem primary</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The open-seat race is one of Texas' most closely watched local races, with both parties eyeing an opportunity in a county that remains politically competitive. [Texas Governor Greg] Abbott has pledged to turn Harris County "dark red" after years of Democratic control."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— MSN</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.khou.com/article/news/politics/primary-election-results-harris-county-jduge/285-b256a260-6299-49cb-bd7c-8f169b9a14e0">Harris County Judge results: Latest numbers in race to replace Lina Hidalgo</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The seat is being vacated by current Harris County Judge Lina Hidalgo, who will not be seeking a third term... Letitia Plummer, a two-term Houston Councilmember. Annise Parker, former three-term Houston mayor, who was the city controller before that... Warren A. Howell a Harris County business owner who served in the Air Force... Orlando Sanchez, a former Harris County treasurer and Houston city councilmember."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— KHOU 11 (CBS)</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">March 3, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.click2houston.com/decision-2026/2026/02/26/harris-county-judge-primary-election-results-for-march-3-2026/">Harris County judge primary election results for March 3, 2026</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Offices on the ballot in Harris County included the county judge position, a key executive role overseeing the Commissioners Court and county administration."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Click 2 Houston (NBC)</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">January 21, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.offthekuff.com/wp/?p=121881">Interview with Letitia Plummer</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"[Letitia Plummer] stepped down from Houston City Council last year after announcing her candidacy (also before Judge Hidalgo’s announcement), where she was in her second term in At Large #4. A dentist by trade, she ran for CD22 in 2018 and lost in the primary runoff before winning her first Council race the next year. She became the first Muslim woman to serve on Houston City Council in winning that election."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Off the Kuff</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">January 19, 2026</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.offthekuff.com/wp/?p=121880">Interview with Annise Parker</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"[Annise Parker] served six years (the maximum allowed at the time) on Houston City Council, as Controller, and of course as Houston’s Mayor. Since then she has served as Senior Vice President and Chief Strategy Officer for BakerRipley and spent seven years as CEO and President of the LGBTQ+ Victory Fund and Leadership Institute. She was the first person to announce her candidacy for the Democratic nomination for County Judge, before Judge Hidalgo announced her intention to not run again."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Off the Kuff</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">November 23, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.fox26houston.com/video/1745766">One-on-one with Harris Co. Judge candidate Orlando Sanchez</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Former Harris County treasurer Orlando Sanchez says his long history in and outside of politics has equipped him to take the county judge seat as a Republican candidate."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— FOX 26 Houston | What's Your Point?</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">September 23, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.youtube.com/live/tAnxBonJLN0?t=490&si=7EHMPk9nZd3vfCvE">Orlando Sanchez on Running for Harris County Judge</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"...former Harris County Treasurer Orlando Sanchez talks about his run for Harris County Judge."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Public Media (NPR) | Hello Houston</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">June 29, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.fox26houston.com/video/1666457">Letitia Plummer running for judge</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Letitia Plummer has joined the competitive Harris County judge race."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— FOX 26 Houston | What's Your Point?</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-microphone"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">June 25, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.youtube.com/watch?v=Q3Lqo-U2d70">Former mayor Annise Parker runs for Harris County Judge</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"[Annise Parker] has spent much of her adult life in public service, and in this role she says she would be focused on public safety, public health, and flood control. Parker discusses a long-term strategy for drainage infrastructure, fixing county budget issues, her work with Victory Fund, and more."</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Houston Public Media (NPR) | Hello Houston</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-video"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">June 15, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://www.fox26houston.com/video/1658613">Parker runs for Harris Co. judge</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Annise Parker throws her hat in the ring in the race to be the next Harris County judge. Does the former Houston mayor have a shot?"</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— FOX 26 Houston | What's Your Point?</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="timeline-item">
+					
+					<div class="timeline-marker is-icon is-success" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					
+					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+						
+						<p class="heading">June 12, 2025</p>
+						
+						<p>
+							
+							<h3 class="has-text-weight-bold"><a target="_blank" href="https://katychristianmagazine.com/2025/06/12/candidate-warren-howell-brings-back-common-sense-leadership-to-harris-county-judge-race/">Candidate Warren Howell Brings Back Common Sense Leadership to Harris County Judge Race</a></h3>
+						
+						</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"[Warren Howell], a conservative candidate for Harris County Judge, is running on a platform built around fiscal responsibility, public safety, and respect for working families. His campaign emphasizes restoring order to county government, cutting wasteful spending, and supporting first responders. "</p>
+						
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Katy Christian Magazine</p>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+	</section>
+	
+	<!--js-schema-->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			"name": "Harris County Judge Primary Runoff Election",
+			"startDate": "2026-05-18",
+			"endDate": "2026-05-26",
+			"eventStatus": "https://schema.org/EventScheduled",
+			"organizer": {
+				"@type": "Organization",
+				"name": "Harris County"
+			},
+			"location": {
+				"@type": "Place",
+				"name": "Harris County, Texas"
+			},
+			"description": "Primary runoff elections for Harris County Judge between Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.",
+			"about": [
+				{"@type": "Person", "name": "Annise Parker"},
+				{"@type": "Person", "name": "Letitia Plummer"},
+			    {"@type": "Person", "name": "Warren Howell"},
+			    {"@type": "Person", "name": "Orlando Sanchez"}
+			]
+		}
+	</script>
+	
+	<!--jq-navbar-burger-->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".navbar-burger").click(function() {
+				$(".navbar-burger").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+			});
+		});
+	</script>
+	
+	<!--js-aos-->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	
+	<!--js-countdown-->
+	<script>
+		(function() {
+			const events = [
+				{ date: new Date("2026-04-27T16:59:59"), text: "🚨 Voter signup ends in" },
+				{ date: new Date("2026-05-18T07:00:00"), text: "🚨 Early voting in" },
+				{ date: new Date("2026-05-22T19:00:00"), text: "🚨 Early voting ends in" },
+				{ date: new Date("2026-05-26T07:00:00"), text: "🚨 Election day in" },
+				{ date: new Date("2026-05-26T19:00:00"), text: "🚨 Election day ends in" }
+			];
+			const finalText = '<span class="has-text-white">Voting polls closed for this election</span>';
+			const countdownEl = document.getElementById("countdown");
+			function updateCountdown() {
+				const now = new Date().getTime();
+				const nextEvent = events.find(e => now < e.date.getTime());
+				if (!nextEvent) {
+					countdownEl.innerHTML = finalText;
+					clearInterval(timerInterval);
+					return;
+				}
+				const diff = nextEvent.date.getTime() - now;
+				const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+				const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000*60*60));
+				const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000*60));
+				const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+				const month = nextEvent.date.getMonth() + 1;
+				const day = nextEvent.date.getDate();
+				let timeDisplay = '';
+				let boldPart = '';
+				if (days > 1) {
+					boldPart = `${days} days`;
+					timeDisplay = ` ${hours}h ${minutes}m ${seconds}s`;
+				} else if (days === 1) {
+					boldPart = `${days} day`;
+					timeDisplay = ` ${hours}h ${minutes}m ${seconds}s`;
+				} else if (hours > 0) {
+					timeDisplay = `${hours}h ${minutes}m ${seconds}s`;
+				} else {
+					timeDisplay = `${minutes}m ${seconds}s`;
+				}
+				countdownEl.innerHTML = `
+				<span class="has-text-white">${nextEvent.text}:</span>
+				${boldPart ? `<span class="has-text-weight-bold has-text-warning-50">${boldPart}</span>` : ''}
+				<span class="has-text-warning-50">${timeDisplay}</span>`;
+			}
+			updateCountdown();
+			const timerInterval = setInterval(updateCountdown, 1000);
+		})();
+	</script>
+
+</body>
+
+</html>
