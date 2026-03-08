@@ -8,14 +8,6 @@
 	
 	<!--js-ga4-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G662789R5J"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', '');
-	</script>
-		
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G662789R5J"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -120,8 +112,6 @@
 		
 			<div class="navbar-brand">
 				
-				<p id="countdown" class="navbar-item"></p>
-				
 				<span class="navbar-burger">
 					<span></span>
 					<span></span>
@@ -202,11 +192,11 @@
 						Harris County Judge
 					</h1>
 					
-					<h2 class="mb-2 subtitle has-text-white">
+					<h2 class="subtitle has-text-white">
 						Primary Runoff Elections <i class="fa-solid fa-bolt-lightning"></i> May 26, 2026
 					</h2>
 					
-					<div class="buttons is-centered">
+					<div class="my-5 buttons is-centered">
 						
 						<a class="button is-rounded is-medium" target="_blank" href="https://www.hctax.net/Voter/Registration">
 							<i class="fa-solid fa-check-to-slot"></i>
@@ -214,6 +204,8 @@
 						</a>
 						
 					</div>
+					
+					<p id="countdown"></p>
 					
 				</div>
 				
@@ -827,6 +819,7 @@
 				}
 				countdownEl.innerHTML = `
 				<span class="has-text-white">${nextEvent.text}:</span>
+				<br>
 				${boldPart ? `<span class="has-text-weight-bold has-text-warning-50">${boldPart}</span>` : ''}
 				<span class="has-text-warning-50">${timeDisplay}</span>`;
 			}
