@@ -8,37 +8,44 @@
 	
 	<!--js-ga4-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G662789R5J"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			// initialize GA4 analytics
-			gtag('js', new Date());
-			// anonymize ip & disable ads features / location reporting
-			gtag('config', 'G-G662789R5J', {
-				'anonymize_ip': true,
-				'allow_ad_personalization_signals': false
-			});
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		// initialize GA4 analytics
+		gtag('js', new Date());
+		// anonymize ip & disable ads features / location reporting
+		gtag('config', 'G-G662789R5J', {
+			'anonymize_ip': true,
+			'allow_ad_personalization_signals': false
+		});
 	</script>
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Civic website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
+	<meta name="description" content="Civic volunteer website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
 	<meta name="author" content="Abhinav Kumar">
 	<meta name="robots" content="index, follow">
 	<meta name="theme-color" content="#000000">
+	
 	<meta property="og:type" content="website">
-	<!--og:image-<300kb-&-1200x630-&-.webp-.jpg-->
-	<meta property="og:image" content="https://harriscountyjudge2026.com/photo_home.webp">
-	<!--og:image:width / og:image:height-->
+	<meta property="og:image" content="https://harriscountyjudge2026.com/media/og_1200x630_08.webp">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Photograph of Harris County government building in Houston, TX">
+	<meta property="og:image" content="https://harriscountyjudge2026.com/media/og_1200x630_08.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Photograph of Harris County government building in Houston, TX">
 	<meta property="og:title" content="Harris County Judge | 2026 Primary Runoff Election Campaigns & News">
 	<meta property="og:url" content="https://harriscountyjudge2026.com">
-	<meta property="og:description" content="Civic website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
+	<meta property="og:description" content="Civic volunteer website for Harris County Judge primary runoff elections on May 26, 2026 between: Democrats Annise Parker and Letitia Plummer, and Republicans Warren Howell and Orlando Sanchez.">
 	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Harris County Judge's Race 2026">
 	
 	<link rel="canonical" href="https://harriscountyjudge2026.com">
 	
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" as="style" fetchpriority="high">
-	<link rel="preload" href="photo_home.webp" as="image" fetchpriority="high">
+	<link rel="preload" href="media/main_2273x1983.webp" as="image" fetchpriority="high">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net">
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -53,7 +60,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" fetchpriority="high">
 	<!--<link rel="stylesheet" href="***.css" fetchpriority="high">-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css" fetchpriority="low">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" fetchpriority="low">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" fetchpriority="low">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" fetchpriority="low">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap">
 	
@@ -68,23 +75,60 @@
 		.font-montserrat {
 			font-family: 'Montserrat' !important;
 		}
+		.shadow {
+			text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.75) !important;
+		}
+		.has-text-yellow {
+			color: rgba(255,204,0,1) !important;
+		}
+		.has-text-dem {
+			color: rgba(137,207,240,1) !important;
+		}
+		.has-text-rep {
+			color: rgba(255,119,121,1) !important
+		}
 		
 		#nav {
-			background-color: rgba(0,0,0,0.75) !important;
+			background-color: rgba(0,0,0,0) !important;
 		    position: fixed !important;
 			width: 100% !important;
+		}
+		#nav .shadow {
+			text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.375) !important;
 		}
 		.navbar-link, .navbar-item {
 			color: white !important;
 		}
+		.navbar-burger span {
+		    background-color: rgba(255,255,255,1) !important;
+			box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.375) !important;
+		}
+		.navbar-dropdown .navbar-item {
+			display: flex !important;
+			justify-content: space-between !important;
+			padding-right: 1rem !important;
+		}
+		.candidate-nav-link {
+			display: flex !important;
+			gap: 0.5rem !important;
+			margin-left: 1rem !important;
+		}
+		.candidate-nav-link i {
+			color: rgba(255,255,255,0.75) !important;
+			transition: color 0.2s ease, transform 0.2s ease !important;
+		}
+		.candidate-nav-link i:hover {
+			color: rgba(255,255,255,1) !important;
+			transform: scale(1.75) !important;
+		}
 		
 		#main {
-			background-image: url('photo_home.webp'), url('photo_home.jpg') !important;
+			background-image: url('media/main_2273x1983.webp'), url('media/main_2273x1983.jpg') !important;
 			background-size: cover !important;
 			background-position: center !important;
 		}
 		#main .container {
-			background-color: rgba(0,0,0,0.85) !important;
+			background-color: rgba(0,0,0,0.75) !important;
 			border-radius: 1em !important;
 		}
 		#main .button {
@@ -100,6 +144,10 @@
 			transform: scale(1.125) !important;
 		}
 		
+		#countdown {
+		  font-variant-numeric: tabular-nums !important;
+		}
+		
 		</style>
 
 </head>
@@ -112,6 +160,8 @@
 		
 			<div class="navbar-brand">
 				
+				<p id="countdown" class="navbar-item is-size-7-mobile shadow" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="0"></p>
+				
 				<span class="navbar-burger">
 					<span></span>
 					<span></span>
@@ -123,51 +173,183 @@
 			
 			<div class="navbar-menu">
 				
-				<div class="navbar-end">
+				<div class="navbar-end has-text-weight-bold">
 					
 					<div class="navbar-item has-dropdown is-hoverable">
 						
-						<a class="navbar-link">
-							<i class="fa-solid fa-democrat"></i>
-							Democrats
+						<a class="navbar-link shadow is-arrowless">
+							<i class="fa-solid fa-handshake"></i>
+							Candidates
+							<i class="fa-solid fa-chevron-down"></i>
 						</a>
 						
-						<div class="navbar-dropdown is-boxed">
+						<div class="navbar-dropdown is-boxed is-right">
 							
-							<p class="navbar-item" href="#annise-parker">
-								Annise Parker
-							</p>
+							<div class="navbar-item">
+								
+								<span id="candidate-warren-howell">
+									Warren Howell
+									<i class="fa-solid fa-republican has-text-rep ml-1"></i>
+								</span>
+								
+								<span class="candidate-nav-link">
+								
+									<a id="candidate-warren-howell-site" target="_blank" href="https://www.warrenhowell.info/">
+										<i class="fa-solid fa-globe"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-profile" target="_blank" href="https://communityimpact.com/houston/heights-river-oaks-montrose/election/2026/01/22/qa-meet-the-republican-candidates-running-for-harris-county-judge-in-the-march-primary-election/#candidate-2616">
+										<i class="fa-solid fa-newspaper"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-fb" target="_blank" href="https://www.facebook.com/people/Warren-Howell-for-Harris-County-Judge/100077287876725/">
+										<i class="fa-brands fa-facebook"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-insta" target="_blank" href="https://www.instagram.com/whowell50/?hl=en">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-x" target="_blank" href="https://x.com/Howell4HarrisCo">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-ph" target="_blank" href="tel:+17135535725">
+										<i class="fa-solid fa-mobile"></i>
+									</a>
+								
+									<a id="candidate-warren-howell-email" target="_blank" href="mailto:warren@howellforharriscounty.com">
+										<i class="fa-solid fa-envelope"></i>
+									</a>
+									
+								</span>
+								
+							</div>
 							
-							<p class="navbar-item" href="#letitia-plummer">
-								Letitia Plummer
-							</p>
+							<div class="navbar-item">
+								
+								<span id="candidate-annise-parker">
+									Annise Parker
+									<i class="fa-solid fa-democrat has-text-dem ml-1"></i>
+								</span>
+								
+								<span class="candidate-nav-link">
+								
+									<a id="candidate-annise-parker-site" target="_blank" href="https://www.anniseparker.com/">
+										<i class="fa-solid fa-globe"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-profile" target="_blank" href="https://communityimpact.com/houston/heights-river-oaks-montrose/election/2026/01/22/qa-meet-the-democratic-primary-candidates-running-for-harris-county-judge/#candidate-2601">
+										<i class="fa-solid fa-newspaper"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-fb" target="_blank" href="https://www.facebook.com/anniseparker/">
+										<i class="fa-brands fa-facebook"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-insta" target="_blank" href="https://www.instagram.com/anniseparker/">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-x" target="_blank" href="https://x.com/anniseparker">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-bsky" target="_blank" href="https://bsky.app/profile/anniseparker.bsky.social">
+										<i class="fa-brands fa-bluesky"></i>
+									</a>
+								
+									<a id="candidate-annise-parker-email" target="_blank" href="mailto:campaign@anniseparker.com">
+										<i class="fa-solid fa-envelope"></i>
+									</a>
+									
+								</span>
+								
+							</div>
+							
+							<div class="navbar-item">
+								
+								<span id="candidate-letitia-plummer">
+									Letitia Plummer
+									<i class="fa-solid fa-democrat has-text-dem ml-1"></i>
+								</span>
+								
+								<span class="candidate-nav-link">
+								
+									<a id="candidate-letitia-plummer-site" target="_blank" href="https://www.drletitiaplummer.com/">
+										<i class="fa-solid fa-globe"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-profile" target="_blank" href="https://communityimpact.com/houston/heights-river-oaks-montrose/election/2026/01/22/qa-meet-the-democratic-primary-candidates-running-for-harris-county-judge/#candidate-2602">
+										<i class="fa-solid fa-newspaper"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-fb" target="_blank" href="https://www.facebook.com/letitiaforhouston">
+										<i class="fa-brands fa-facebook"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-insta" target="_blank" href="https://www.instagram.com/plummer4hou/">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-x" target="_blank" href="https://twitter.com/plummer4hou">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-ph" target="_blank" href="tel:+17133649723">
+										<i class="fa-solid fa-mobile"></i>
+									</a>
+								
+									<a id="candidate-letitia-plummer-email" target="_blank" href="mailto:info@drletitiataplummer.com">
+										<i class="fa-solid fa-envelope"></i>
+									</a>
+									
+								</span>
+								
+							</div>
+							
+							<div class="navbar-item">
+								
+								<span id="candidate-orlando-sanchez">
+									Orlando Sanchez
+									<i class="fa-solid fa-republican has-text-rep ml-1"></i>
+								</span>
+								
+								<span class="candidate-nav-link">
+								
+									<a id="candidate-orlando-sanchez-site" target="_blank" href="https://orlandosanchez.com/">
+										<i class="fa-solid fa-globe"></i>
+									</a>
+								
+									<a id="candidate-orlando-sanchez-profile" target="_blank" href="https://communityimpact.com/houston/heights-river-oaks-montrose/election/2026/01/22/qa-meet-the-republican-candidates-running-for-harris-county-judge-in-the-march-primary-election/#candidate-2618">
+										<i class="fa-solid fa-newspaper"></i>
+									</a>
+								
+									<a id="candidate-orlando-sanchez-fb" target="_blank" href="https://www.facebook.com/OrlandoSanchezCampaign">
+										<i class="fa-brands fa-facebook"></i>
+									</a>
+								
+									<a id="candidate-orlando-sanchez-x" target="_blank" href="https://twitter.com/orlando_sanchez">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								
+									<a id="candidate-orlando-sanchez-ph" target="_blank" href="tel:+18325211962">
+										<i class="fa-solid fa-mobile"></i>
+									</a>
+								
+									<a id="candidate-orlando-sanchez-email" target="_blank" href="mailto:info@orlandosanchez.com">
+										<i class="fa-solid fa-envelope"></i>
+									</a>
+								
+								</span>
+								
+							</div>
 							
 						</div>
 						
 					</div>
 					
-					<div class="navbar-item has-dropdown is-hoverable">
-						
-						<a class="navbar-link">
-							<i class="fa-solid fa-republican"></i>
-							Republicans
-						</a>
-						
-						<div class="navbar-dropdown is-boxed">
-							
-							<p class="navbar-item" href="#warren-howell">
-								Warren Howell
-							</p>
-							
-							<p class="navbar-item" href="#orlando-sanchez">
-								Orlando Sanchez
-							</p>
-							
-						</div>
-						
-					</div>
-					
-					<a class="navbar-item" href="#media">
+					<a class="navbar-item shadow" href="#media">
 						<i class="fa-solid fa-bullhorn"></i>
 						Media
 					</a>
@@ -182,39 +364,48 @@
 	
 	<section>	
 		
+		<!--⛑-->
 		<section id="main" class="hero is-fullheight">
 			
 			<div class="hero-body">
 				
-				<div class="mx-2 my-2 px-5 py-5 container has-text-centered">
+				<div class="mt-6 pt-6 pb-6 container has-text-centered" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="0">
 					
-					<h1 class="mb-2 title">
+					<h1 class="mb-2 title shadow">
 						Harris County Judge
 					</h1>
 					
-					<h2 class="subtitle has-text-white">
-						Primary Runoff Elections <i class="fa-solid fa-bolt-lightning"></i> May 26, 2026
+					<h2 class="mb-2 subtitle has-text-white shadow">
+						Primary Runoff Elections
 					</h2>
 					
-					<div class="my-5 buttons is-centered">
+					<p class="mb-5 has-text-white shadow">
+						May 26, 2026
+					</p>
+					
+					<div class="my-2 buttons is-centered">
 						
 						<a class="button is-rounded is-medium" target="_blank" href="https://www.hctax.net/Voter/Registration">
-							<i class="fa-solid fa-check-to-slot"></i>
-							&nbsp;Signup to Vote
+							<i class="fa-solid fa-check-to-slot mr-2"></i>
+							Sign me up to Vote
+							<i class="fa-solid fa-flag-usa ml-2"></i>
 						</a>
 						
+						<!--<a class="button is-rounded is-medium is-outline" target="_blank" href="https://www.hctax.net/Voter/Registration">
+							<i class="fa-solid fa-democrat mr-2"></i>
+							Meet my Candidates
+							<i class="fa-solid fa-republican ml-2"></i>
+						</a>-->
+						
 					</div>
-					
-					<p id="countdown"></p>
 					
 				</div>
 				
 			</div>
 			
-			<p class="mx-6 mb-2 attribution has-text-centered has-text-white is-size-7">"<a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/47563830@N06/21515449816">City of Houston</a>" by <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/47563830@N06">Jason@Dynamicmoment</a> is licensed under <a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse">CC BY-NC-ND 2.0 <img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img target="_blank" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
-			
 		</section>
 		
+		<!--📣-->
 		<section id="media" class="section has-text-light" data-theme="dark">
 			
 			<h2 class="title">
@@ -731,6 +922,27 @@
 			
 		</section>
 		
+		<!--👟-->
+		<footer class="footer has-text-centered py-6">
+			
+			<div class="content">
+				
+				<h2 class="is-size-7">
+					About the photograph
+				</h2>
+				
+				<p class="attribution is-size-7 mb-6">"<a rel="noopener noreferrer" href="https://commons.wikimedia.org/w/index.php?curid=24041100">Harris County 1910 Courthouse Restored Houston Texas</a>" by <a rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/User:Wiki_name">i_am_jim</a> is licensed under <a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/?ref=openverse">CC BY-SA 3.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
+				
+				<h2 class="is-size-7">
+					About the site
+				</h2>
+				
+				<p class="is-size-7">This site was created and is maintained independently as support, education, and archive for Harris County voters during the 2026 primary runoffs for Harris County Judge. The site, domain, and volunteer are not affiliated with any active campaign. — 3/8/26<p>
+				
+			</div>
+		
+		</footer>
+		
 	</section>
 	
 	<!--js-schema-->
@@ -781,11 +993,11 @@
 	<script>
 		(function() {
 			const events = [
-				{ date: new Date("2026-04-27T16:59:59"), text: "🚨 Voter signup ends in" },
-				{ date: new Date("2026-05-18T07:00:00"), text: "🚨 Early voting in" },
-				{ date: new Date("2026-05-22T19:00:00"), text: "🚨 Early voting ends in" },
-				{ date: new Date("2026-05-26T07:00:00"), text: "🚨 Election day in" },
-				{ date: new Date("2026-05-26T19:00:00"), text: "🚨 Election day ends in" }
+				{ date: new Date("2026-04-27T16:59:59"), text: "⚠️ Voter signup ends in" },
+				{ date: new Date("2026-05-18T07:00:00"), text: "⚠️ Early voting in" },
+				{ date: new Date("2026-05-22T19:00:00"), text: "⚠️ Early voting ends in" },
+				{ date: new Date("2026-05-26T07:00:00"), text: "⚠️ Election day in" },
+				{ date: new Date("2026-05-26T19:00:00"), text: "⚠️ Election day ends in" }
 			];
 			const finalText = '<span class="has-text-white">Voting polls closed for this election</span>';
 			const countdownEl = document.getElementById("countdown");
@@ -818,10 +1030,9 @@
 					timeDisplay = `${minutes}m ${seconds}s`;
 				}
 				countdownEl.innerHTML = `
-				<span class="has-text-white">${nextEvent.text}:</span>
-				<br>
-				${boldPart ? `<span class="has-text-weight-bold has-text-warning-50">${boldPart}</span>` : ''}
-				<span class="has-text-warning-50">${timeDisplay}</span>`;
+				<span class="has-text-weight-bold has-text-white">${nextEvent.text}:</span>
+				${boldPart ? `<span class="has-text-weight-bold has-text-yellow">${boldPart}</span>` : ''}
+				<span class="has-text-weight-bold has-text-yellow">${timeDisplay}</span>`;
 			}
 			updateCountdown();
 			const timerInterval = setInterval(updateCountdown, 1000);
